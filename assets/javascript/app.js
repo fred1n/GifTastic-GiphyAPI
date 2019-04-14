@@ -39,7 +39,7 @@ $(document).ready(function() {
 		});
 	}
 
-	//Submit button click event takes search term from form input, trims and pushes to topics array, displays button
+	//Submit button click event takes search item from input, trims and pushes to topics array, displays button
 	$('#addShow').on('click', function(event) {
 		event.preventDefault();
 		var newShow = $('#marvelInput').val().trim();
@@ -52,7 +52,7 @@ $(document).ready(function() {
 	//function to remove last button
 	function removeLastButton() {
 		$('removeGif').on('click', function() {
-			topic.pop(lady);
+			topic.pop(char);
 			displayGifButtons();
 			return false;
 		});
