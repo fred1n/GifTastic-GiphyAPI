@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Marvel Giphy Buttons</title>
+    <!-- References -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  </head>
+  <body id="header-section">
+    <div class="jumbotron" id="header">
+      <h1>Marvel Characters</h1>
+      <h4>Click buttons to display GIPHYs of the Marvel characters<br>Click the GIPHYs to pause and play<br>Search to add more buttons!</h4>
+    </div>
+    <!-- Search option -->
+    <form class="form-inline" id="marvelSearch">
+      <div class="form-group">
+        <label for="marvelInput">Search for a Marvel character</label>
+        <input type="text" id="marvelInput">
+      </div>
+      <!-- Buttons added and remove options -->
+      <input id="addShow" type="submit" value="submit">
+      <input id="removeGif" type="submit" value="Remove last Entry">	
+    </form>
+
+    <!-- Display initial buttons -->
+    <div class="row">
+      <div class="container">
+        <div class="btn-group inline pull-left">
+
+          <button class="btn btn-primary" id="show" data-search="Iron Man">Iron Man</button>
+          <button class="btn btn-primary" id="show" data-search="Captain America">Captain America</button>
+          <button class="btn btn-primary" id="show" data-search="Thor">Thor</button>
+          <button class="btn btn-primary" id="show" data-search="Hulk">Hulk</button>
+
+          <div id="myButtons"></div>
+        </div> <!--end of button group -->
+      </div> <!--end of container -->
+    </div> <!--end of row -->
+
+    <div class="row">
+      <div class="container">
+          <span><div id="gifArea"></div></span>
+      </div> <!--end of container -->
+    </div> <!-- end of row  -->
+
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  </body>
+</html>

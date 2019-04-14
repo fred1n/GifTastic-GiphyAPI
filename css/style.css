@@ -1,1 +1,54 @@
- 
+#header {
+    background-color: #c2b9bb;
+    color: #0e0808;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: "Carrois Gothic SC", sans-serif;
+    background-image: url("../assets/images/marvelbg.jpg");
+}
+
+#topImageL {
+    width: 15%;
+    float: left;
+    margin-left: 20px;
+}
+
+#topImageR {
+    width: 15%;
+    float: right;
+    margin-right: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+#show {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: url("../assets/images/captaina2.jpg");
+}
+
+#marvelSearch {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Carrois Gothic SC", sans-serif;
+}
+
+#gifArea {
+    clear: both;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.marvelGiphy {
+    padding: 2px;
+    width: 80%;
+}
+
+.container {
+    background-image: url("../assets/images/images.jpg");
+}
