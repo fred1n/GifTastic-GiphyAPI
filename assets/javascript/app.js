@@ -43,10 +43,15 @@ $(document).ready(function() {
 	$('#addShow').on('click', function(event) {
 		event.preventDefault();
 		var newShow = $('#marvelInput').val().trim();
-		topics.push(newShow);
-		console.log(topics);
-		$('#marvelInput').val('');
-		displayButtons();
+		console.log(newShow);
+		if (newShow === '') {
+			alert('Need to Enter a character to Add!');
+		} else {
+			topics.push(newShow);
+			console.log(topics);
+			$('#marvelInput').val('');
+			displayButtons();
+		}
 	});
 
 	//function to remove last button
