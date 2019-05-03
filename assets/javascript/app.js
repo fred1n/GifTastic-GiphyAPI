@@ -8,7 +8,8 @@ $(document).ready(function() {
 		var x = $(this).data('search');
 		console.log(x);
 
-		var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + x + '&api_key=dc6zaTOxFJmzC&limit=10';
+		var queryURL =
+			'https://api.giphy.com/v1/gifs/search?q=' + x + '&api_key=xKszrop1yX34Sg5JecIO9bEpapFdFXhX&limit=10';
 
 		console.log(queryURL);
 		$('#gifArea').html('');
